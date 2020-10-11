@@ -1,0 +1,21 @@
+
+//build_config 配置
+def build_config = [:]
+//android
+build_config.classpath_gradle = "com.android.tools.build:gradle:3.1.2"
+build_config.min_sdk = 16
+build_config.compile_sdk = 28
+build_config.build_tool = "28.0.3"
+build_config.target_sdk = 16
+build_config.classpath_kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.41"
+build_config.classpath_kotlin_extension = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.41"
+build_config.test ="android.support.test.runner.AndroidJUnitRunner"
+
+
+//需要每次发版休息的版本信息
+build_config.version_code = 1
+build_config.version_name = "1.0.0"
+build_config.build_app_id ="com.friendscircle"
+
+
+ext.build_config = build_config
