@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/lib_app_common" />
+            <option value="$PROJECT_DIR$/lib_common_core" />
             <option value="$PROJECT_DIR$/lib_common_ui" />
             <option value="$PROJECT_DIR$/lib_network" />
           </set>

@@ -30,4 +30,6 @@ dependencies {
     testImplementation deps.junit
     androidTestImplementation deps.test_runer
     androidTestImplementation deps.espresso
+
+    implementation project(':lib_common_core')
 }

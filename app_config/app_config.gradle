@@ -4,7 +4,7 @@ def versions = [:]
 // SmartRefreshLayout
 versions.smartRefreshLayout = '1.1.0-alpha-19'
 // rx
-versions.retrofit2Version = '2.3.0'
+versions.retrofit2Version = '2.4.0'
 versions.rxandroidVersion = '2.0.2'
 versions.loggingInterceptor = '3.12.+'
 // json tool -- to do
@@ -12,14 +12,23 @@ versions.fastJsonVersion = '1.2.6'
 versions.googleGsonVersion = '2.7'
 
 // Support library
-versions.supportLibraryVersion  = "28.0.0"
-versions.multidexVersion  = "1.0.3"
+versions.supportLibraryVersion = "28.0.0"
+versions.multidexVersion = "1.0.3"
 
 //other
 versions.gson = "2.8.0"
+//fresco
+versions.fresco = "1.8.1"
+
+//utils
+
+versions.utilcode = "1.29.0"
+//greendao
+versions.greendao = "3.2.2"
+//logger
+versions.logger = "2.2.0"
 
 ext.versions = versions
-
 
 //deps依赖库
 ext.deps = [:]
@@ -28,7 +37,7 @@ def deps = [:]
 // App's support dependencies
 deps.appcompat = "com.android.support:appcompat-v7:$versions.supportLibraryVersion"
 deps.multidex = "com.android.support:multidex:$versions.multidexVersion"
-deps.gson  = "com.google.code.gson:gson:$versions.gson"
+deps.gson = "com.google.code.gson:gson:$versions.gson"
 deps.kotlinverson = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 deps.junit = "junit:junit:4.12"
 deps.test_runer = "com.android.support.test:runner:1.0.2"
@@ -37,12 +46,21 @@ deps.espresso = "com.android.support.test.espresso:espresso-core:3.0.2"
 //rx
 deps.retrofit2Version = "com.squareup.retrofit2:retrofit:$versions.retrofit2Version"
 deps.retrofit2ConverterGson = "com.squareup.retrofit2:converter-gson:$versions.retrofit2Version"
-deps.retrofit2ConverterScalars ="com.squareup.retrofit2:converter-scalars:$versions.retrofit2Version"
+deps.retrofit2ConverterScalars = "com.squareup.retrofit2:converter-scalars:$versions.retrofit2Version"
 deps.retrofit2ConverterAdapterRxjava2 = "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit2Version"
-deps.retrofit2Okhttp3LoggingInnterceptor ="com.squareup.okhttp3:logging-interceptor:$versions.loggingInterceptor"
+deps.retrofit2Okhttp3LoggingInnterceptor = "com.squareup.okhttp3:logging-interceptor:$versions.loggingInterceptor"
 deps.rxandroid = "io.reactivex.rxjava2:rxandroid:$versions.rxandroidVersion"
 
+//fresco
+deps.fresco = "com.facebook.fresco:fresco:$versions.fresco"
 
+//utils：https://github.com/Blankj/AndroidUtilCode/blob/master/lib/utilcode/README-CN.md
+deps.utilcode = "com.blankj:utilcode:$versions.utilcode"
 
+//greendao
+deps.greendao = "org.greenrobot:greendao:$versions.greendao"
+
+//logger
+deps.logger = "com.orhanobut:logger:$versions.logger"
 
 ext.deps = deps

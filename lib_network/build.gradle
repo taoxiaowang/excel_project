@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion build_config.compile_sdk
     buildToolsVersion build_config.build_tool
@@ -27,7 +28,7 @@ dependencies {
     testImplementation deps.junit
     androidTestImplementation deps.test_runer
     androidTestImplementation deps.espresso
-
+    api deps.logger
     api ([
             deps.retrofit2Version,
             deps.retrofit2ConverterGson,
@@ -36,4 +37,8 @@ dependencies {
             deps.retrofit2Okhttp3LoggingInnterceptor,
             deps.rxandroid
     ])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }
